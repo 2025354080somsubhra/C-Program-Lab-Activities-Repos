@@ -1,42 +1,42 @@
-// #include <stdio.h>
+#include <stdio.h>
 
-// void increase(int *x) {
-//     *x = *x + 1;   
-// }
+void increase(int *x) {
+    *x = *x + 1;   
+}
 
-// int main() {
-//     int num;
+int main() {
+    int num;
 
-//     printf("Enter a number: ");
-//     scanf("%d", &num);
+    printf("Enter a number: ");
+    scanf("%d", &num);
 
-//     printf("Before function call, value = %d\n", num);
+    printf("Before function call, value = %d\n", num);
 
-//     increase(&num);   
+    increase(&num);   
 
-//     printf("After function call, value = %d\n", num);
+    printf("After function call, value = %d\n", num);
 
-//     return 0;
-// }
+    return 0;
+}
 
-// #include<stdio.h>
+#include<stdio.h>
 
-// void swap_no(int *a, int *b) {
-//     int z;
-//     z = *a;
-//     *a = *b;
-//     *b = z;
-// }
+void swap_no(int *a, int *b) {
+    int z;
+    z = *a;
+    *a = *b;
+    *b = z;
+}
 
-// int main() {
-//     int d,e;
-//     printf("Enter 2 numbers : ");
-//     scanf("%d%d",&d,&e);
-//     printf("Before swap d is %d & e is %d \n",d,e);
-//     swap_no(&d,&e);
-//     printf("After swap d is %d & e is %d ",d,e);
-//     return 0;
-// }
+int main() {
+    int d,e;
+    printf("Enter 2 numbers : ");
+    scanf("%d%d",&d,&e);
+    printf("Before swap d is %d & e is %d \n",d,e);
+    swap_no(&d,&e);
+    printf("After swap d is %d & e is %d ",d,e);
+    return 0;
+}
 
 #include <stdio.h>
 
@@ -142,4 +142,5 @@ int main()
 
     return 0;
 }
+
 

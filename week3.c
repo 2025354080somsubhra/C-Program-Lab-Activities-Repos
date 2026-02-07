@@ -1,45 +1,45 @@
 // Q1
-// #include <stdio.h>
-// #include <string.h>
+#include <stdio.h>
+#include <string.h>
 
-// void printShortName(char name[]) {
-//     char *parts[10];   
-//     int count = 0;
-
-    
-//     char *token = strtok(name, " ");
-//     while (token != NULL) {
-//         parts[count++] = token;
-//         token = strtok(NULL, " ");
-//     }
-
-//     if (count == 0) return;
+void printShortName(char name[]) {
+    char *parts[10];   
+    int count = 0;
 
     
-//     printf("%c. ", parts[0][0]);
+    char *token = strtok(name, " ");
+    while (token != NULL) {
+        parts[count++] = token;
+        token = strtok(NULL, " ");
+    }
+
+    if (count == 0) return;
 
     
-//     if (count > 2) {
-//         printf("%c. ", parts[1][0]);
-//     }
+    printf("%c. ", parts[0][0]);
 
     
-//     printf("%s\n", parts[count - 1]);
-// }
+    if (count > 2) {
+        printf("%c. ", parts[1][0]);
+    }
 
-// int main() {
-//     char name[100];
+    
+    printf("%s\n", parts[count - 1]);
+}
 
-//     printf("Enter full name: ");
-//     fgets(name, sizeof(name), stdin);
+int main() {
+    char name[100];
+
+    printf("Enter full name: ");
+    fgets(name, sizeof(name), stdin);
 
 
-//     name[strcspn(name, "\n")] = '\0';
+    name[strcspn(name, "\n")] = '\0';
 
-//     printShortName(name);
+    printShortName(name);
 
-//     return 0;
-// }
+    return 0;
+}
 
 // Q2
 #include <stdio.h>
@@ -102,4 +102,5 @@ int main() {
 
     return 0;
 }
+
 
